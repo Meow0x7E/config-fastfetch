@@ -58,6 +58,11 @@
             "format": "{1}@{2}"
         },
         {
+            "type": "player",
+            "key": "  󰥠 Player",
+            "keyColor": "\u001b[38;2;255;128;255"
+        },
+        {
             "type": "media",
             "key": "   Media",
             "keyColor": "\u001b[38;2;255;128;255",
