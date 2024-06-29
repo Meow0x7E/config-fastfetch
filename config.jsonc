@@ -4,9 +4,9 @@
     "logo": {
         "padding": { "right": 1 },
         "printRemaining": true,
-        // 如果为 `true` 则在 `logo` 底部打印 `modules`
+        // 如果为 `1` 则在 `logo` 底部打印 `modules`
         // 这或许对竖屏显示设备更友好
-        "separate": false
+        "position": 1
     },
     "general": { "multithreading": true },
     "display": {
