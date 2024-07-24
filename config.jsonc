@@ -1,12 +1,12 @@
 {
     // 为 `IDE` 提供代码智能
-    "$schema": "https://github.com/extdomains/github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "padding": { "right": 1 },
         "printRemaining": true,
         // 如果为 `top` 则在 `logo` 底部打印 `modules`
         // 这或许对竖屏显示设备更友好
-        "position": "top"
+        "position": "left"
     },
     "general": { "multithreading": true },
     "display": {
@@ -17,17 +17,19 @@
         "separator": "",
         "brightColor": false,
         "keyWidth": 20,
-        // "iec" => 1024 Bytes = 1 KiB, 1024 KiB = 1 MiB, ... (standard)
-        // "si"  => 1000 Bytes = 1 KB, 1000 KB = 1 MB, ...
-        "binaryPrefix": "iec",
-        "size": { "ndigits": "2" },
+        "size": {
+            // "iec" => 1024 Bytes = 1 KiB, 1024 KiB = 1 MiB, ... (standard)
+            // "si"  => 1000 Bytes = 1 KB, 1000 KB = 1 MB, ...
+            "binaryPrefix": "iec",
+            "ndigits": "2"
+        },
         "temp": {
             // "CELSIUS",    "C" => 摄氏度
             // "FAHRENHEIT", "F" => 华氏度
             // "KELVIN",     "K" => 开尔文
             "unit": "C",
             "ndigits": 2,
-            // 这里 `Green`, `Yellow`, `Red` 并不代表 RGB 值，是指值的危险程度
+            // 这里 `Green`, `Yellow`, `Red` 并不代表 RGB 值，是指值的危险程度对应的颜色
             "color": {
                 "green": "\u001b[38;2;0;255;0",
                 "yellow": "\u001b[1;38;2;255;255;0",
