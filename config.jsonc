@@ -16,7 +16,7 @@
         "hideCursor": true,
         "separator": "",
         "brightColor": false,
-        "keyWidth": 20,
+        "key": { "width": 20 },
         "size": {
             // "iec" => 1024 Bytes = 1 KiB, 1024 KiB = 1 MiB, ... (standard)
             // "si"  => 1000 Bytes = 1 KB, 1000 KB = 1 MB, ...
