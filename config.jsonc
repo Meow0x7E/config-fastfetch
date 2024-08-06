@@ -17,14 +17,14 @@
         "separator": "",
         "brightColor": false,
         "key": {
-            "width": 20,
+            "width": 21,
             "type": "string"
         },
         "size": {
             // "iec" => 1024 Bytes = 1 KiB, 1024 KiB = 1 MiB, ... (standard)
             // "si"  => 1000 Bytes = 1 KB, 1000 KB = 1 MB, ...
             "binaryPrefix": "iec",
-            "ndigits": "2"
+            "ndigits": 2
         },
         "temp": {
             // "CELSIUS",    "C" => 摄氏度
@@ -42,7 +42,6 @@
         "bar": {
             "charElapsed": "=",
             "charTotal": "-",
-            "border": false,
             "width": 30
         },
         "percent": {
@@ -85,6 +84,16 @@
             "format": "{2} {4}"
         },
         {
+            "type": "initsystem",
+            "key": "  󰿄InitSystem",
+            "keyColor": "\u001b[38;2;0;192;255"
+        },
+        {
+            "type": "bootmgr",
+            "key": "   BootMgr",
+            "keyColor": "\u001b[38;2;0;192;255"
+        },
+        {
             "type": "packages",
             "key": "  󰏖 Packages",
             "keyColor": "\u001b[38;2;0;192;255"
@@ -101,13 +110,18 @@
             "format": "{5} (\u001b[0;38;2;0;255;0m{6}\u001b[0m)"
         },
         {
+            "type": "terminalfont",
+            "key": "     TerminalFont",
+            "keyColor": "\u001b[38;2;0;192;255"
+        },
+        {
             "type": "terminalsize",
             "key": "    󰲎 TerminalSize",
             "keyColor": "\u001b[38;2;0;192;255"
         },
         {
-            "type": "terminalfont",
-            "key": "     TerminalFont",
+            "type": "terminaltheme",
+            "key": "     TerminalTheme",
             "keyColor": "\u001b[38;2;0;192;255"
         },
         {
@@ -120,15 +134,15 @@
             "type": "localip",
             "key": "  󰩟 LocalIP",
             "keyColor": "\u001b[38;2;0;192;255",
-            "showipv4": true,
-            "showipv6": true,
-            "compact": true
+            "showIpv4": true,
+            "showIpv6": true,
+            "showMac": true
         },
-        {
+        /*{
             "type": "publicip",
             "key": "  󰩠 PublicIP",
             "keyColor": "\u001b[38;2;0;192;255"
-        },
+        },*/
         {
             "type": "locale",
             "key": "   Locale",
@@ -152,11 +166,6 @@
         {
             "type": "theme",
             "key": "  󰉼 Theme",
-            "keyColor": "\u001b[38;2;255;175;0"
-        },
-        {
-            "type": "icons",
-            "key": "   Icons",
             "keyColor": "\u001b[38;2;255;175;0"
         },
         {
@@ -260,6 +269,10 @@
             "type": "brightness",
             "key": "    󰃠 Brightness",
             "keyColor": "\u001b[38;2;0;255;175"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 20
         }
     ]
 }
