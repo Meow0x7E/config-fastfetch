@@ -85,7 +85,7 @@
         },
         {
             "type": "initsystem",
-            "key": "  󰿄InitSystem",
+            "key": "  󰿄 InitSystem",
             "keyColor": "\u001b[38;2;0;192;255"
         },
         {
