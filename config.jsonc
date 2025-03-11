@@ -2,13 +2,17 @@
     // 为 `IDE` 提供代码智能
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "padding": { "right": 1 },
+        "padding": {
+            "right": 1
+        },
         "printRemaining": true,
         // 如果为 `top` 则在 `logo` 底部打印 `modules`
         // 这或许对竖屏显示设备更友好
         "position": "left"
     },
-    "general": { "multithreading": true },
+    "general": {
+        "multithreading": true
+    },
     "display": {
         "stat": false,
         "showErrors": false,
@@ -265,11 +269,11 @@
             "key": "  󰹑 Monitor",
             "keyColor": "\u001b[38;2;0;255;175"
         },
-        {
+        /*{
             "type": "brightness",
             "key": "    󰃠 Brightness",
             "keyColor": "\u001b[38;2;0;255;175"
-        },
+        },*/
         {
             "type": "colors",
             "paddingLeft": 20
