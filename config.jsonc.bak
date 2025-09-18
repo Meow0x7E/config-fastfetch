@@ -10,6 +10,9 @@
         // 这或许对竖屏显示设备更友好
         "position": "left"
     },
+    "general": {
+        "multithreading": true
+    },
     "display": {
         "stat": false,
         "showErrors": false,
@@ -41,10 +44,8 @@
             }
         },
         "bar": {
-            "char": {
-                "elapsed": "=",
-                "total": "-"
-            },
+            "charElapsed": "=",
+            "charTotal": "-",
             "width": 30
         },
         "percent": {
