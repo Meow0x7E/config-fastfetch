@@ -8,6 +8,17 @@
         "printRemaining": true,
         // 如果为 `top` 则在 `logo` 底部打印 `modules`
         // 这或许对竖屏显示设备更友好
+        // 一个简单的自动探测终端宽度并决定是否要设置为 top 的 shellcode
+        // ```bash
+        // function fastfetch() {
+        //   local cols="$(tput cols)"
+        //   if [[ -n "$cols" ]] && ((cols <= 90 )); then
+        //     command fastfetch --logo-position top "$@"
+        //   else
+        //     command fastfetch "$@"
+        //   fi
+        // }
+        // ```
         "position": "left"
     },
     "display": {

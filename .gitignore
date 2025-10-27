@@ -1,0 +1,6 @@
+*
+!.gitignore
+!config.jsonc
+!README.md
+!README-zh_CN.md
+!doc/preview.png
