@@ -149,7 +149,7 @@
             "key": "  󰩟 LocalIP",
             "keyColor": "\u001b[38;2;0;192;255",
             "showIpv4": true,
-            "showIpv6": true,
+            "showIpv6": false,
             "showMac": true
         },
         /*{
